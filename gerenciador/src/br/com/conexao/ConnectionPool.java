@@ -20,7 +20,7 @@ public class ConnectionPool {
 		
 		mysqlDataSource.setURL(url);
 		mysqlDataSource.setUser("root");
-		mysqlDataSource.setPassword("j4m1l!123");
+		mysqlDataSource.setPassword("");
 
 		this.dataSource = mysqlDataSource;
 
