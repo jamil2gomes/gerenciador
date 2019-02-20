@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>gerenciador</display-name>
+  <welcome-file-list>
+    <welcome-file>formLogin.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <context-param>
+    <param-name>
+      javax.servlet.jsp.jstl.fmt.localizationContext
+    </param-name>
+    <param-value>messages</param-value>
+  </context-param>
+  
+  
+  <filter>
+    <filter-name>AutenticacaoFilter</filter-name>
+    <filter-class>br.com.controller.AutenticacaoFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>AutenticacaoFilter</filter-name>
+    <url-pattern>/entrada</url-pattern>
+  </filter-mapping>
+  
+   <filter>
+    <filter-name>MonitoramentoFilter</filter-name>
+    <filter-class>br.com.controller.MonitoramentoFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>MonitoramentoFilter</filter-name>
+    <url-pattern>/entrada</url-pattern>
+  </filter-mapping>
+  
+  
+  <filter>
+    <filter-name>ControladorCentralFilter</filter-name>
+    <filter-class>br.com.controller.ControladorCentralFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>ControladorCentralFilter</filter-name>
+    <url-pattern>/entrada</url-pattern>
+  </filter-mapping>
+</web-app>

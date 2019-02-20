@@ -1,0 +1,48 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 13, 2017, 4:20:09 PM
+    Author     : levimmartins
+*/
+
+.navbar-default {
+	background-color: #fefefe;
+	border-color: #e0e9e3;
+}
+
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover{
+	color: #F6A416;
+	background-color: #dcd9e3;
+
+} 
+
+
+
+.btn-primary {
+    color: #fff;
+    background-color:  #f68035;
+    border-color: #f9a21f;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #ffb22d  !important;
+    border-color: #f9a21f;
+  
+}
+
+.form-control{ 
+
+	border-block-start-style: unset !important;
+	border-bottom-left-radius: 0px !important;
+	border-bottom-right-radius: 0px !important;
+	border-inline-start-style: none !important;
+	border-inline-start-width: inherit !important;
+	border-inline-end-color: white !important;
+	border-bottom-color: #f9b02899 !important;
+
+}
